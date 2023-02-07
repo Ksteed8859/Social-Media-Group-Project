@@ -1,17 +1,14 @@
 [
   {
     "name": "John_Doe123",
-    "description": "First post, who this?",
-    "needed_funding": 5000
+    "description": "First post, who this?"
   },
   {
     "name": "Coding.Lover404",
-    "description": "Day 8 of being unable to debug please help:(",
-    "needed_funding": 10000
+    "description": "Day 8 of being unable to debug please help:("
   },
   {
     "name": "St3veIsKool",
-    "description": "Im cool.",
-    "needed_funding": 800
+    "description": "Im cool."
   }
 ]
