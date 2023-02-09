@@ -11,21 +11,17 @@ Post.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    username: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
+    post: {
       type: DataTypes.STRING,
     },
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
-    },
-    needed_funding: {
-      type: DataTypes.FLOAT,
-      allowNull: false,
     },
     user_id: {
       type: DataTypes.INTEGER,
@@ -43,5 +39,7 @@ Post.init(
     modelName: 'post',
   }
 );
+
+//change name to username and description to post. 
 
 module.exports = Post;
