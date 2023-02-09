@@ -4,26 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fund My Project!</title>
-  <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <title>Tea Party</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="../../public/css/jass.css">
+  <link rel="stylesheet" href="../../public/css/style.css">
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
+  <nav class="navbar block light-blue darken-1" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      🫖 TEA PARTY
+    </div>
+  </nav>
+  <div class="flex-column justify-space-around block">
     <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">Fund My Project!</a>
-      </h1>
-      <nav>
+      <div class="block">
+        <h1 class="center-align">Welcome to <strong>TEA PARTY</strong> <h1>
+        <h3 class="center-align"> "Feel Free to Spill the Tea" </h3>
+      </div>
+      <div class="center-align">
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a href="/profile">profile</a>
+        <button class="is-primary light-blue darken-1 center-align" id="logout">Logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login"><button class="btn is-primary light-blue darken-1">Get Started!</button></a>
         {{/if}}
-      </nav>
+      </div>
     </header>
     <main class="container container-fluid mt-5">
       {{{ body }}}
@@ -36,6 +43,7 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
+
 </body>
 
 </html>
