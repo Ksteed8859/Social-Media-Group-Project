@@ -1,49 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tea Party</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Party</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/jass.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="../../public/css/jass.css">
-  <link rel="stylesheet" href="../../public/css/style.css">
-</head>
+  <body>
+    <div class="column is-three-fifths is-offset-one-fifth">
+      <form class="box">
+        <div class="title">
+          <h1 class="has-text-centered">Tea Party</h1>
+        </div>
 
-<body>
-  <nav class="navbar block light-blue darken-1" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      🫖 TEA PARTY
+        <form class="form login-form">
+          <div class="form-group">
+            <label for="email-login">Email:</label>
+            <input class="form-input" type="text" id="email-login" />
+          </div>
+          <div class="form-group">
+            <label for="password-login">Password:</label>
+            <input class="form-input" type="password" id="password-login" />
+          </div>
+          <div class="form-group">
+            <button class="button is-danger" type="submit">Login</button>
+          </div>
+        </form>
+
+      </form>
+      <form class="box">
+        <div class="create-account">
+          <h6 class="has-text-centered">Don't have an account? <a href="/login">Sign Up</a></h6>
+        </div>
+      </form>
     </div>
-  </nav>
-  <div class="flex-column justify-space-around block">
-    <header class="display-flex justify-space-between align-center p-2">
-      <div class="block">
-        <h1 class="center-align">Welcome to <strong>TEA PARTY</strong> <h1>
-        <h3 class="center-align"> "Feel Free to Spill the Tea" </h3>
-      </div>
-      <div class="center-align">
-        {{#if logged_in}}
-        <a href="/profile">profile</a>
-        <button class="is-primary light-blue darken-1 center-align" id="logout">Logout</button>
-        {{else}}
-        <a href="/login"><button class="btn is-primary light-blue darken-1">Get Started!</button></a>
-        {{/if}}
-      </div>
-    </header>
-    <main class="container container-fluid mt-5">
+
+    <main class="box">
       {{{ body }}}
     </main>
-    <footer>
-      
-    </footer>
-  </div>
 
-  {{#if logged_in}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
+    <script src="./js/login.js"></script>
 
-</body>
-
+  </body>
 </html>
