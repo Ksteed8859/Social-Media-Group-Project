@@ -10,40 +10,51 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
 
+  <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="TPartyLogo.png" alt='TParty'/>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-danger" href="/login">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-danger is-light" href="/login">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
   <body>
     <div class="column is-three-fifths is-offset-one-fifth">
       <form class="box">
         <div class="title">
-          <h1 class="has-text-centered">T Party</h1>
-        </div>
-
-        <form class="form login-form">
-          <div class="form-group">
-            <label for="email-login">Email:</label>
-            <input class="form-input" type="text" id="email-login" />
-          </div>
-          <div class="form-group">
-            <label for="password-login">Password:</label>
-            <input class="form-input" type="password" id="password-login" />
-          </div>
-          <div class="form-group">
-            <button class="button is-danger" type="submit">Login</button>
-          </div>
-        </form>
-
-      </form>
-      <form class="box">
-        <div class="create-account">
-          <h6 class="has-text-centered">Don't have an account? <a href="/login">Sign Up</a></h6>
+          <h1 class="has-text-centered"><strong>Welcome To</strong></h1>
+          <img src="TPartyWord.png" class="is-centered"/>
         </div>
       </form>
+
+        <div class="box has-text-centered">
+            <a class="button is-danger is-large" href="/login">
+              Click Here to Get Started
+            </a>
+        </div>
     </div>
 
-    <main class="box">
       {{{ body }}}
-    </main>
-
-    <script src="./js/login.js"></script>
 
   </body>
 </html>
