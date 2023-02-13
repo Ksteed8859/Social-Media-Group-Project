@@ -40,6 +40,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+//Use images in the public/images file
+app.use(express.static('public/images'));
+
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
