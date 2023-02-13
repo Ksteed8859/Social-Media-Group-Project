@@ -9,52 +9,36 @@
     <link rel="stylesheet" href="/css/jass.css">
     <link rel="stylesheet" href="/css/style.css">
   </head>
-
-  <nav class="navbar is-light" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <img src="TPartyLogo.png" alt='TParty'/>
-      </a>
-
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-danger" href="/login">
-              <strong>Sign up</strong>
-            </a>
-            <a class="button is-danger is-light" href="/login">
-              Log in
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
   <body>
-    <div class="column is-three-fifths is-offset-one-fifth">
-      <form class="box">
-        <div class="title">
-          <h1 class="has-text-centered"><strong>Welcome To</strong></h1>
-          <img src="TPartyWord.png" class="is-centered"/>
-        </div>
-      </form>
 
-        <div class="box has-text-centered">
-            <a class="button is-danger is-large" href="/login">
-              Click Here to Get Started
-            </a>
-        </div>
-    </div>
+        <div class="container has-text-centered">
+          <div class="column is-half is-offset-one-quarter">
 
-      {{{ body }}}
+    
+            <div class="box">
+              <section class="section is-small">
+                <img src="TPartyLogo.png" alt='TParty'/>
+                <h2 class="title"><span id="T">T</span><span id="Party">PARTY</span></h2>
+
+                    <div class="title has-text-grey is-5">We're so glad you're here!</div>
+                        <div class="box has-text-centered">
+                        <a class="button is-medium" id="loginBtn" href="/login">
+                        Login
+                        </a>
+                        <p>――――――― OR ―――――――</p>
+                        <a class="button is-medium" id="SignUpBtn" href="/login">
+                        Sign Up
+                        </a>
+                    </div>
+              </section>
+            </div>
+
+            
+          </div>
+         {{{body}}} 
+        </div>
+
+      
 
   </body>
 </html>
