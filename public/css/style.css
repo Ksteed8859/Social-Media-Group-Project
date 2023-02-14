@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(103, 10, 24);
+}
+
+.title {
+    font-size: 70px;
+    font-family: "Copperplate";
+}
+
+.font {
+    font-family: "Copperplate";
+    color: black;
+}
+
+#T {
+    color:rgb(205, 11, 11)
+}
+
+#Party {
+    color:rgb(244, 86, 7)
+}
+
+#loginBtn, #loginBtn2, #SignUpBtn2 {
+    background-color: rgb(216, 43, 43);
+    color: white;
+}
+
+#SignUpBtn {
+    background-color: rgb(24, 6, 6);
+    color: white;
+}
