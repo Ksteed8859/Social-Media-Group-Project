@@ -1,14 +1,14 @@
 [
   {
     "name": "John Doe",
-    "description": "First post, who this?"
+    "post": "First post, who this?"
   },
   {
     "name": "Carl Smith",
-    "description": "Day 8 of being unable to debug please help:("
+    "post": "Day 8 of being unable to debug please help:("
   },
   {
     "name": "Steven Craft",
-    "description": "Im cool."
+    "post": "Im cool."
   }
 ]
