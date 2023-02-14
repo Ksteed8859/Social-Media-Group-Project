@@ -1,4 +1,4 @@
-<div class="row"
+<div class="row">
     <div class="col-auto">
         <h2>Hi, {{name}}!</h2>
     </div>
@@ -27,7 +27,7 @@
                 <nav class="level">
                     <div class="level-left">
                         <div class="level-item">
-                            <a class="button is-info">Post</a>
+                            <a class="button is-info" id="save-post">Post</a>
                         </div>
                     </div>
                 </nav>
@@ -42,10 +42,11 @@
             {{#each posts as|post|}}
                 <div class="row mb-2">
                     <div class="col-md-8">
-                        <h4><a href="/posts/{{post.id}}">{{post.name}}</a></h4>
+                        <h4> <a href="/posts/{{post.id}}" id="user-name">{{name}}</a></h4>
+                        <p> <a href="post/{{post.id}}" id="post-desc">{{post}}</a></p>
                     </div>
                     <div class="col-md-4">
-                        <button class="btn is-danger" data-id="{{post.id}}">DELETE</button>
+                        <button class="btn is-danger" data-id="{{post.id}}" id="delete-post">DELETE</button>
                     </div>
                 </div>
             {{/each}}

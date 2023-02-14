@@ -1,4 +1,8 @@
 node_modules
-.env
+.env 
+# .env will sapousedly work but if not we can just use this git rm --cached .env
 .DS_Store
 package-lock.json
+# do we want to add this in here? some said it was helpful? line 6 and 7
+# build
+# npm-debug.log
