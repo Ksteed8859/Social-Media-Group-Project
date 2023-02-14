@@ -1,3 +1,40 @@
+Josh
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/homepage">
+      <img src="TPartyLogo.png" width="112" height="28">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+       Profile
+      </a>
+
+    </div>
+  </div>
+  </div>
+</nav>
+
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="pfp.jpg">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong> {{username.name}} </strong>
+      </p>
+    </div>
 {{#each posts as |post| }}
 <div class="row mb-4 post">
     <article class="media">
@@ -34,3 +71,4 @@
     </article>
 </div>
 {{/each}}
+ main
