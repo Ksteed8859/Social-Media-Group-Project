@@ -9,36 +9,66 @@
     <link rel="stylesheet" href="/css/jass.css">
     <link rel="stylesheet" href="/css/style.css">
   </head>
+
+  <header>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <span class="NavT">T</span><span class="NavParty">PARTY</span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      {{#if logged_in}}
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="/homepage">
+            Home
+          </a>
+
+          <a class="navbar-item" href="/profile">
+            Profile
+          </a>
+
+          <a class="navbar-item" href="/post">
+            New Post
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <button class="button" id="logout">
+            Logout
+          </button>
+        </div>
+      </div>
+      {{else}}
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button" href="/login" id="login">
+              <strong>Get Started</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+      {{/if}}
+    </div>
+  </nav>
+</header>
   <body>
 
-        <div class="container has-text-centered">
-          <div class="column is-half is-offset-one-quarter">
-
-    
-            <div class="box">
-              <section class="section is-small">
-                <img src="TPartyLogo.png" alt='TParty'/>
-                <h2 class="title"><span id="T">T</span><span id="Party">PARTY</span></h2>
-
-                    <div class="title has-text-grey is-5">We're so glad you're here!</div>
-                        <div class="box has-text-centered">
-                        <a class="button is-medium" id="loginBtn" href="/login">
-                        Login
-                        </a>
-                        <p>――――――― OR ―――――――</p>
-                        <a class="button is-medium" id="SignUpBtn" href="/login">
-                        Sign Up
-                        </a>
-                    </div>
-              </section>
-            </div>
-
-            
-          </div>
-         {{{body}}} 
-        </div>
+    {{{body}}}
 
       
 
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
   </body>
 </html>
