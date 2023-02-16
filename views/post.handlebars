@@ -5,6 +5,42 @@
     </p> --}}
   </figure>
   <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>{{user.username}}</strong> <small>{{user.name}}</small> <small>{{date_created}}</small>
+        <br>
+       <textarea placeholder="Spill that Tea!">{{post}}</textarea>
+      </p>
+    </div>
+    <div class="level-item">
+      <a class="button is-info" id="save-post">Spill</a>
+    </div>
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <a class="level-item">
+          <span class="icon is-small"><i class="fas fa-reply"></i></span>
+        </a>
+        <a class="level-item">
+          <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+        </a>
+        <a class="level-item">
+          <span class="icon is-small"><i class="fas fa-heart"></i></span>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <div class="media-right">
+    <button class="delete"></button>
+  </div>
+</article>
+
+<article class="media">
+  <figure class="media-left">
+    {{!-- <p class="image is-64x64">
+      <img src="https://bulma.io/images/placeholders/128x128.png">
+    </p> --}}
+  </figure>
+  <div class="media-content">
     <div class="field">
       <p class="control">
         <div class="level-left"><strong>{{user.username}}</strong> <small>{{user.name}}</small></div>
@@ -14,7 +50,7 @@
     <nav class="level">
       <div class="level-left">
         <div class="level-item">
-          <a class="button is-info">Spill</a>
+          <a class="button is-info" id="save-post">Spill</a>
         </div>
       </div>
       <div class="level-right">
