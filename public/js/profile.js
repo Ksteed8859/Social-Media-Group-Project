@@ -29,7 +29,7 @@ const newFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/profile');
+        document.location.replace('/post');
       } else {
         alert('Failed to delete post');
       }
@@ -39,6 +39,7 @@ const newFormHandler = async (event) => {
   document
     .querySelector('.post-form')
     .addEventListener('submit', newFormHandler);
-  
-
+  document
+    .querySelector('#delete-post')
+    .addEventListener('click', delButtonHandler);
   
