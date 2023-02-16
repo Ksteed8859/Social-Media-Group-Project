@@ -1,20 +1,20 @@
-{{#if post.length}}
+{{!-- {{#if post.length}} --}}
   <div class="col-md-6 project-list">
-    <h3>previous post!</h3>
+    <h3 class="has-text-white">previous post:</h3>
 
 
-  {{#each posts as |post|}}
+  {{!-- {{#each posts as |post|}} --}}
   <div class="media-content">
     <div class="content">
       <div class="box">
-      <p><a href="../models/User.js"><strong>{{username}}</strong><small>{{name}}</a></small><small>{{format_date}}</small>
+      <p><strong>{{username}}</strong><small>{{name}}</small><small></small>
         <br>
         {{post}}
       </p>
     </div>
-    <button class="delete" id="delete-post"  data-id="{{post.id}}"></button>
+    <button  id="delete-post"  data-id="{{post.id}}">DELETE</button>
   </div>
-  {{/each}}
+  {{!-- {{/each}} --}}
 </article>
-{{/if}}
+{{!-- {{/if}} --}}
 </div>
