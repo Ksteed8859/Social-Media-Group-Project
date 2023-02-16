@@ -45,3 +45,8 @@ body {
     background-color: rgb(24, 6, 6);
     color: white;
 }
+
+#navbar {
+    background-color: rgb(244, 86, 7);
+    color: rgb(244, 86, 7);
+}

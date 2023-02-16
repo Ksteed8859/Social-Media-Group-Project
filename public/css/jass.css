@@ -1702,5 +1702,11 @@
     .align-content-center-xl {
       align-content: center;
     }
+    .navbar-item {
+      font-family: monospace, monospace;
+      text-decoration: underline;
+      text-decoration-color: rgb(216, 43, 43);
+      text-decoration-thickness: 3px;
+    }
   }
   
