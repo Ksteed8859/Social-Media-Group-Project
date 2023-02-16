@@ -1,11 +1,12 @@
 {{!-- {{#if post.length}} --}}
-  <div class="col-md-6 project-list">
-    <h3 class="has-text-white">previous post:</h3>
-
+  {{!-- <div class="col-md-6 project-list">
+    <h3 class="has-text-white">previous post:</h3> --}}
 
   {{!-- {{#each posts as |post|}} --}}
-  <div class="media-content">
-    <div class="content">
+  {{!-- <div class="media-content"> --}}
+{{!-- {{#if user}}
+    {{!-- {{#each user}} --}} 
+    {{!-- <div class="content">
       <div class="box">
       <p><strong>{{username}}</strong><small>{{name}}</small><small></small>
         <br>
@@ -13,8 +14,23 @@
       </p>
     </div>
     <button  id="delete-post"  data-id="{{post.id}}">DELETE</button>
-  </div>
+  </div> --}}
   {{!-- {{/each}} --}}
-</article>
+{{!-- </article> --}}
 {{!-- {{/if}} --}}
+{{!-- </div> --}}
+<div>
+  {{#each posts}}
+
+  {{!-- {{#each username}} --}}
+<h4>
+  {{username}}
+</h4>
+{{!-- {{/each}} --}}
+<h2>
+  {{post}}
+</h2>
+
+{{/each}}
+
 </div>
