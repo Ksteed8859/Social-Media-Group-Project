@@ -5,6 +5,10 @@ const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 
+//Packages for uploading images
+const cloudinary = require("cloudinary").v2;
+require('dotenv').config();
+
 const sequelize = require('./config/connection');
 // const { hasSubscribers } = require('diagnostics_channel');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -29,6 +33,15 @@ const sess = {
     db: sequelize
   })
 };
+
+//Configuration for Cloudinary
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
+});
+
+
 
 app.use(session(sess));
 
