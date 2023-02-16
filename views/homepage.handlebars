@@ -1,7 +1,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/homepage">
-      <img src="TPartyLogo.png" width="175" height="250">
+      <img src="MiniLogo.png" width="150" height="500">
     </a>
 
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -15,6 +15,10 @@
     <div class="navbar-start">
       <a class="navbar-item">
        Profile
+      </a>
+
+      <a class="navbar-item">
+        Post
       </a>
 
     </div>
@@ -31,6 +35,22 @@
   <div class="media-content">
     <div class="content">
       <p>
-        <strong> {{username.name}} </strong>
+        <strong> {{username}} </strong> <small> {{name}} </small>
+        <br>
+        {{post}}
       </p>
+      <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
     </div>
