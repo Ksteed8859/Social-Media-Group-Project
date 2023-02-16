@@ -29,19 +29,19 @@ router.get('/homepage', async (req, res) => {
 router.get('/post', async (req, res) => {
   try {
     const postData = await Post.findAll(req.params.id, {
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
+      include: [ User
+        // {
+        //    User,
+        //   // attributes: ['name'],
+        // },
       ],
     });
-
+    
     const posts = postData.map((post) => post.get({ plain: true }));
     // const post = postData.get({ plain: true });
-
+    console.log(posts)
     res.render('post', {
-      ...posts,
+      posts,
       logged_in: req.session.logged_in
     });
   } catch (err) {
