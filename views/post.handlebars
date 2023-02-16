@@ -7,22 +7,25 @@
   <div class="media-content">
     <div class="field">
       <p class="control">
+        <div class="level-left"><strong>{{user.username}}</strong> <small>{{user.name}}</small></div>
         <textarea class="textarea" placeholder="Spill that Tea!"></textarea>
       </p>
     </div>
     <nav class="level">
       <div class="level-left">
         <div class="level-item">
-          <a class="button is-info" id="save-post">Spill</a>
+          <a class="button is-info">Spill</a>
         </div>
       </div>
       <div class="level-right">
         <div class="level-item">
-          
+          <button class="button is-danger is-outlined">
+            <span>Delete</span>
+            <span class="icon is-small">
+              <i class="fas fa-times"></i>
         </div>
       </div>
     </nav>
   </div>
 </article>
 
-{{!-- delete-post for delete button --}}
