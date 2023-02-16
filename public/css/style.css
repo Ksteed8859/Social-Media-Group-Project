@@ -36,7 +36,7 @@ body {
     font-weight: bold;
 }
 
-#login, #logout, #loginBtn {
+#login, #logout, #loginBtn, #postBtn {
     background-color: rgb(216, 43, 43);
     color: white;
 }
@@ -49,4 +49,9 @@ body {
 #navbar {
     background-color: rgb(244, 86, 7);
     color: rgb(244, 86, 7);
+}
+
+#username {
+    color: rgb(205, 11, 11);
+    text-decoration: underline;
 }
