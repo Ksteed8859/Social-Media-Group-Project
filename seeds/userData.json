@@ -2,16 +2,19 @@
   {
     "name": "John Doe",
     "email": "JoeDoe@hotmail.com",
-    "password": "password12345"
+    "password": "password123654",
+    "username": "JohnnyD"
   },
   {
     "name": "Carl Smith",
     "email": "CarlSmith42@gmail.com",
-    "password": "password12345"
+    "password": "password54321",
+    "username": "CarlSmith"
   },
   {
     "name": "Steven Craft",
     "email": "StevenCraft08@aol.com",
-    "password": "password12345"
+    "password": "password12345",
+    "username": "SteventotheCraft"
   }
 ]

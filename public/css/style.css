@@ -12,15 +12,31 @@ body {
     color: black;
 }
 
-#T {
-    color:rgb(205, 11, 11)
+.T {
+    color:rgb(205, 11, 11);
+    font-family: "Copperplate";
 }
 
-#Party {
-    color:rgb(244, 86, 7)
+.Party {
+    color:rgb(244, 86, 7);
+    font-family: "Copperplate";
 }
 
-#loginBtn, #loginBtn2, #SignUpBtn2 {
+.NavT {
+    color:rgb(205, 11, 11);
+    font-family: "Copperplate";
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.NavParty {
+    color:rgb(244, 86, 7);
+    font-family: "Copperplate";
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#login, #logout, #loginBtn, #postBtn {
     background-color: rgb(216, 43, 43);
     color: white;
 }
@@ -28,4 +44,14 @@ body {
 #SignUpBtn {
     background-color: rgb(24, 6, 6);
     color: white;
+}
+
+#navbar {
+    background-color: rgb(244, 86, 7);
+    color: rgb(244, 86, 7);
+}
+
+#username {
+    color: rgb(205, 11, 11);
+    text-decoration: underline;
 }

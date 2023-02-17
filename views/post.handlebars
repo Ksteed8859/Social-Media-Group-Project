@@ -1,31 +1,32 @@
-<article class="media">
-<!-- PROFILE PICTURE
-  <figure class="media-left">
-    <p class="image is-64x64">
-      <img src="https://bulma.io/images/placeholders/128x128.png">
-    </p>
-  </figure>
--->
-  <div class="media-content">
-    <div class="content">
-      <p>
-        <strong>{{user.name}}</strong> <small>@{{name}}</small> <small></small>
-        <br>
-        {{post}}
-      </p>
-    </div>
-    <nav class="level is-mobile">
-      <div class="level-left">
-        <a class="level-item">
-          <span class="icon is-small"><i class="fas fa-reply"></i></span>
-        </a>
-        <a class="level-item">
-          <span class="icon is-small"><i class="fas fa-retweet"></i></span>
-        </a>
-        <a class="level-item">
-          <span class="icon is-small"><i class="fas fa-heart"></i></span>
-        </a>
+
+<div class="container has-text-centered">
+  <div class="column is-half is-offset-one-quarter">
+
+
+    <section class="section is-small">
+      <div class="box">
+      
+        <h2 class="title font">Welcome to your Profile! </h2>
+
+            <div class="title has-text-grey is-2">This space is all for you!</div>
+      
       </div>
-    </nav>
-  </div>
-</article>
+    </section>
+
+    <div class="box">
+      <div class="container has-text-centered">
+        <div class="column is-half is-offset-one-quarter">
+          <h2>Look at You!</h2>
+            <img src="pfp.jpg" alt='profilepic'/>
+
+            You are {{name}}
+            @{{username}}
+          </div>
+
+          
+        </div> 
+      </div>
+    </div>
+
+  </div> 
+</div>
