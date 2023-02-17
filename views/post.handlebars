@@ -1,36 +1,32 @@
-{{!-- {{#if post.length}} --}}
-  {{!-- <div class="col-md-6 project-list">
-    <h3 class="has-text-white">previous post:</h3> --}}
 
-  {{!-- {{#each posts as |post|}} --}}
-  {{!-- <div class="media-content"> --}}
-{{!-- {{#if user}}
-    {{!-- {{#each user}} --}} 
-    {{!-- <div class="content">
+<div class="container has-text-centered">
+  <div class="column is-half is-offset-one-quarter">
+
+
+    <section class="section is-small">
       <div class="box">
-      <p><strong>{{username}}</strong><small>{{name}}</small><small></small>
-        <br>
-        {{post}}
-      </p>
+      
+        <h2 class="title font">Welcome to your Profile! </h2>
+
+            <div class="title has-text-grey is-2">This space is all for you!</div>
+      
+      </div>
+    </section>
+
+    <div class="box">
+      <div class="container has-text-centered">
+        <div class="column is-half is-offset-one-quarter">
+          <h2>Look at You!</h2>
+            <img src="pfp.jpg" alt='profilepic'/>
+
+            You are {{name}}
+            @{{username}}
+          </div>
+
+          
+        </div> 
+      </div>
     </div>
-    <button  id="delete-post"  data-id="{{post.id}}">DELETE</button>
-  </div> --}}
-  {{!-- {{/each}} --}}
-{{!-- </article> --}}
-{{!-- {{/if}} --}}
-{{!-- </div> --}}
-<div>
-  {{#each posts}}
 
-  {{!-- {{#each username}} --}}
-<h4>
-  {{username}}
-</h4>
-{{!-- {{/each}} --}}
-<h2>
-  {{post}}
-</h2>
-
-{{/each}}
-
+  </div> 
 </div>
