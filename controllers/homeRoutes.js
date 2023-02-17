@@ -8,7 +8,7 @@ router.get('/homepage', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
+          //attributes: ['name', 'username'],
         },
       ],
     });
@@ -32,7 +32,7 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
+          //attributes: ['name', 'username'],
         },
       ],
     });
@@ -53,11 +53,11 @@ router.get('/', async (req, res) => {
 router.get('/post', async (req, res) => {
   try {
     const postData = await Post.findAll(req.params.id, {
-      include: [ User
-        // {
-        //    User,
-        //   // attributes: ['name'],
-        // },
+      include: [
+        {
+          model: User,
+          //attributes: ['name', 'username'],
+        },
       ],
     });
     
